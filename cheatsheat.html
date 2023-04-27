@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .class {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000000;
+        }
+
+        .class2 {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        .tabs {
+            width: 600px;
+            display: block;
+            margin: 40px auto;
+            position: relative;
+        }
+
+        .tabs .tab {
+            float: left;
+            display: block;
+        }
+
+        .tabs .tab>input[type="radio"] {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        .tabs .tab>label {
+            display: block;
+            padding: 6px 21px;
+            font-size: 12px;
+            text-transform: uppercase;
+            cursor: pointer;
+            position: relative;
+            color: #FFF;
+            background: #000000;
+        }
+
+        .tabs .content {
+            z-index: 0;
+            overflow: hidden;
+            width: 600px;
+            padding: 25px;
+            position: absolute;
+            top: 27px;
+            left: 0;
+            background: #303030;
+            color: #DFDFDF;
+
+            opacity: 0;
+            transition: opacity 400ms ease-out;
+        }
+
+
+        .tabs>.tab>[id^="tab"]:checked~[id^="tab-content"] {
+            z-index: 1;
+            opacity: 1;
+            transition: opacity 400ms ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+    <ul class="class">
+        <li class="class2"><a href="Index.html">Home</a></li>
+        <li class="class2"><a href="Contact.html">Contact</a></li>
+        <li class="class2"><a href="cheatsheat.html">CheatSheets</a></li>
+    </ul>
+    </p>
+    <ul>
+
+        <ul class="tabs">
+
+            <li class="tab">
+                <input type="radio" name="tabs" checked="checked" id="tab1" />
+                <label for="tab1">HTML</label>
+                <div id="tab-content1" class="content">
+                    <h1>HTML CHEAT SHEAT</h1>
+                    <hr />
+                    <br><br>
+                    <p><b>TAGS</b>
+                        <br>HTML: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRepresents the root
+                        element of an HTML document.<br>
+                        HEAD: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspContains information about the
+                        HTML document, such as title, character encoding. <br>
+                        BODY:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbspContains the main elements of
+                        HTML document<br>
+                        p:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        Represents a body of text<br>
+                        ahref:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Creates a Hyperlink<br>
+                        div:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Represents
+                        a division of content
+                    </p>
+                </div>
+            </li>
+
+            <li class="tab">
+                <input type="radio" name="tabs" id="tab2" />
+                <label for="tab2">CSS</label>
+                <div id="tab-content2" class="content">
+                    <h1>CSS CHEAT SHEET</h1>
+                    <hr />
+                    <br>
+                    <p>*:select all elements of the page<br>
+                        element: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSelects elements of a
+                        specific type <br>
+                        .class:
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSelects
+                        all elements with a specific class name.<br>
+                        #id:
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSelects
+                        a single element with a specific ID. <br>
+                    </p>
+                </div>
+            </li>
+
+            <li class="tab">
+                <input type="radio" name="tabs" id="tab3" />
+                <label for="tab3">COMMAND LINE</label>
+                <div id="tab-content3" class="content">
+                    <h1>COMMAND LINE CHEAT SHEETS</h1>
+                    <hr />
+                    <br />
+                    <p></p>
+                </div>
+            </li>
+
+            <li class="tab">
+                <input type="radio" name="tabs" id="tab4" />
+                <label for="tab4">BATCH LINE</label>
+                <div id="tab-content4" class="content">
+                    <h1>BATCH LINE CHEAT SHEETS</h1>
+                    <hr />
+                    <br />
+                    <p></p>
+                </div>
+            </li>
+
+        </ul>
+</body>
+
+</html>
