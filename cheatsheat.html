@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        .color {
+            color: red;
+        }
+
         .class {
             list-style-type: none;
             margin: 0;
@@ -16,6 +20,11 @@
         .class2 {
             float: left;
         }
+
+        .class4 {
+            float: left;
+        }
+
 
         li a {
             display: block;
@@ -85,6 +94,10 @@
             opacity: 1;
             transition: opacity 400ms ease-out;
         }
+
+        a:hover {
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -96,76 +109,129 @@
         <li class="class2"><a href="cheatsheat.html">CheatSheets</a></li>
     </ul>
     </p>
-    <ul>
+    <ul class="tabs">
 
-        <ul class="tabs">
+        <li class="tab">
+            <input type="radio" name="tabs" checked="checked" id="tab1" />
+            <label for="tab1">HTML</label>
+            <div id="tab-content1" class="content">
+                <h1>HTML CHEAT SHEAT</h1>
+                <hr />
+                <br><br>
+                <table>
 
-            <li class="tab">
-                <input type="radio" name="tabs" checked="checked" id="tab1" />
-                <label for="tab1">HTML</label>
-                <div id="tab-content1" class="content">
-                    <h1>HTML CHEAT SHEAT</h1>
-                    <hr />
-                    <br><br>
-                    <p><b>TAGS</b>
-                        <br>HTML: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspRepresents the root
-                        element of an HTML document.<br>
-                        HEAD: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspContains information about the
-                        HTML document, such as title, character encoding. <br>
-                        BODY:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbspContains the main elements of
-                        HTML document<br>
-                        p:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        Represents a body of text<br>
-                        ahref:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Creates a Hyperlink<br>
-                        div:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Represents
-                        a division of content
-                    </p>
-                </div>
-            </li>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Head</td>
+                        <td>Body</td>
+                        <td>p tag</td>
+                        <td>ahref</td>
+                        <td>div</td>
+                    </tr>
+                    <tr>
+                        <td>Represents the root of the HTML Document</td>
+                        <td>Contains the informantion about the HTML Document</td>
+                        <td>Contains the main elements of HTML document</td>
+                        <td>Represents the body of text</td>
+                        <td>Creates a hyperlink</td>
+                        <td>Represents a division of content</td>
+                    </tr>
 
-            <li class="tab">
-                <input type="radio" name="tabs" id="tab2" />
-                <label for="tab2">CSS</label>
-                <div id="tab-content2" class="content">
-                    <h1>CSS CHEAT SHEET</h1>
-                    <hr />
-                    <br>
-                    <p>*:select all elements of the page<br>
-                        element: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSelects elements of a
-                        specific type <br>
-                        .class:
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSelects
-                        all elements with a specific class name.<br>
-                        #id:
-                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSelects
-                        a single element with a specific ID. <br>
-                    </p>
-                </div>
-            </li>
+                </table>
+            </div>
+        </li>
 
-            <li class="tab">
-                <input type="radio" name="tabs" id="tab3" />
-                <label for="tab3">COMMAND LINE</label>
-                <div id="tab-content3" class="content">
-                    <h1>COMMAND LINE CHEAT SHEETS</h1>
-                    <hr />
-                    <br />
-                    <p></p>
-                </div>
-            </li>
-
-            <li class="tab">
-                <input type="radio" name="tabs" id="tab4" />
-                <label for="tab4">BATCH LINE</label>
-                <div id="tab-content4" class="content">
-                    <h1>BATCH LINE CHEAT SHEETS</h1>
-                    <hr />
-                    <br />
-                    <p></p>
-                </div>
-            </li>
-
-        </ul>
+    </ul>
 </body>
 
 </html>
+<!--
+        <li class="tab">
+        <input type="radio" name="tabs" id="tab2" />
+        <label for="tab2">CSS</label>
+        <div id="tab-content2" class="content">
+            <h1>CSS CHEAT SHEET</h1>
+            <hr />
+            <br>
+            <p>
+            <table class="class">
+    <li class="class4"><a>*: Selects All Elements of the page</a></li>
+    <li class="class4"><a>element: Selects element of a specific type</a></li>
+    <li class="class4"><a>.class: Selects all elements with a specific class name</a>
+    <li class="class4"><a>#id: Selects all a single element with a specific ID</a>
+        </p>
+        </table>
+        </div>
+
+    <li class="tab">
+        <input type="radio" name="tabs" id="tab3" />
+        <label for="tab3">COMMAND LINE</label>
+        <div id="tab-content3" class="content">
+            <h1>COMMAND LINE CHEAT SHEETS</h1>
+            <hr />
+            <br />
+            <p>
+            <table class="class">
+    <li class="class4"><a>Change Directory: cd.. to move back cd foldername to move into specific
+            folder</a>
+    <li class="class4"><a>Make Directory: md foldername</a></li>
+    <li class="class4"><a>Delete a File: del filename</a></li>
+    <li class="class4"><a>Copy a File to a folder: Copy filename foldername</a></li>
+    <li class="class4"><a>Open File in Default Program: start filename</a></li>
+    <li class="class4"><a>List Directory: dir</a></li>
+    <li class="class4"><a>Remove Directory: rd foldername</a></li>
+    <li class="class4"><a>Create a file: echo. > filename</a></li>
+    <li class="class4"><a>Open a file: code filename</a></li>
+    </p>
+    </div>
+    </li>
+
+    <li class="tab">
+        <input type="radio" name="tabs" id="tab4" />
+        <label for="tab4">BATCH LINE</label>
+        <div id="tab-content4" class="content">
+            <h1>BATCH LINE CHEAT SHEETS</h1>
+            <hr />
+            <br />
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam aliquid labore, vero optio
+                repudiandae consequatur, itaque quasi corrupti dolorum magnam dignissimos non, tempora aut
+                adipisci dolore animi voluptates repellendus esse.</p>
+        </div>
+    </li>
+
+    <li class="tab">
+        <input type="radio" name="tabs" id="tab5" />
+        <label for="tab5">GO TAB</label>
+        <div id="tab-content5" class="content">
+            <h1>GO TAB CHEATSHEET</h1>
+            <hr />
+            <br />
+            <p>
+            <ul class="class">
+                <li class="class3"><a>Assign Variables:<br>There are 4 ways to Assign Varaibles in Go.<br> var
+                        <h class="color"> colour</h> string :<h class="color"> colour </h> ="red".<br>
+                        <h class="color"> colour </h>
+                        string = "red"<br> var <h class="color"> colour </h> ="red"</h><br>
+                        <h class="color">colour</h> := "Red"
+                    </a>
+                <li class="class3"><a>Short Assingnment Characters:<br>:= : Declares a Variable which in turn
+                        gives a variable a type<br>Arithmatic Operators:<br>== : Value is
+                        True<br>!= : Value is False<br>+= : Addition Assingment Operator<br>-= :
+                        Subrtraction Assignment Operator<br>*= : Multiplication Assignment Operator<br>/= :
+                        Division
+                        Assignment Operator</a>
+                <li class="class3"><a>If Else Statement Example:<br>if err != nil { <br>
+                        fmt.Println("whaay") <br>
+                        } else { <br>
+                        fmt.Println("try again") <br>
+                        } <br>Here you can see an if else statement if the err variable does not = nil the code
+                        will print out the statement "whaay" else it will print out the statement "try
+                        again"</a>
+                <li class="class3"><a>Adding Loop Example:<br>func main() { <br> sum := 0<br>for i := 0 i 10;
+                        i++ { <br>sum+=i }<br>fmt.pritnln(sum) }<br>So in this function the code will print out
+                        the sum of all the numbers from 1-10 due to the Short Assignment Operator added together
+                        sequencely</a>
+                <li class="class3"><a>Functions:<br>With Go Code the layout is simple you have variable then you
+                        of code that the perfroms a task and if it is two words you should use camelCase<br>
+
+                -->
