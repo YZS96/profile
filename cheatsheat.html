@@ -117,31 +117,168 @@
             <div id="tab-content1" class="content">
                 <h1>HTML CHEAT SHEAT</h1>
                 <hr />
-                <br><br>
-                <table>
+                <br></br>
+                <ul class="class">
+                    <table>
 
-                    <tr>
-                        <td>HTML</td>
-                        <td>Head</td>
-                        <td>Body</td>
-                        <td>p tag</td>
-                        <td>ahref</td>
-                        <td>div</td>
-                    </tr>
-                    <tr>
-                        <td>Represents the root of the HTML Document</td>
-                        <td>Contains the informantion about the HTML Document</td>
-                        <td>Contains the main elements of HTML document</td>
-                        <td>Represents the body of text</td>
-                        <td>Creates a hyperlink</td>
-                        <td>Represents a division of content</td>
-                    </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Head</td>
+                            <td>Body</td>
+                            <td>p tag</td>
+                            <td>ahref</td>
+                            <td>div</td>
+                        </tr>
+                        <tr>
+                            <td>Represents the root of the HTML Document</td>
+                            <td>Contains the informantion about the HTML Document</td>
+                            <td>Contains the main elements of HTML document</td>
+                            <td>Represents the body of text</td>
+                            <td>Creates a hyperlink</td>
+                            <td>Represents a division of content</td>
+                        </tr>
 
-                </table>
+                    </table>
             </div>
         </li>
 
-    </ul>
+        <li class="tab">
+            <input type="radio" name="tabs" checked="checked" id="tab1" />
+            <label for="tab1">CSS</label>
+            <div id="tab-content1" class="content">
+                <h1>CSS CHEAT SHEET</h1>
+                <hr />
+                <ul class="class">
+                    <table>
+                        <tr>
+                            <td>*</td>
+                            <td>Element</td>
+                            <td>.Class</td>
+                            <td>#id</td>
+                        </tr>
+                        <tr>
+                            <td>Selects all elements of the page</td>
+                            <td>Selects elements of a specific type</td>
+                            <td>Selects all elements of a specific class name</td>
+                            <td>Selects a single element with a specific ID</td>
+                        </tr>
+                    </table>
+            </div>
+        </li>
+        <li class="tab">
+            <input type="radio" name="tabs" checked="checked" id="tab1" />
+            <label for="tab1">BATCH FILES</label>
+            <div id="tab-content1" class="content">
+                <h1>BATCH FILES CHEAT SHEET</h1>
+                <hr />
+                <ul class="class">
+                    <table>
+                        <tr>
+                            <td>Needs Adding</td>
+                        </tr>
+                        <tr>
+                            <td>Needs Adding</td>
+                        </tr>
+                    </table>
+            </div>
+        </li>
+        <li class="tab">
+            <input type="radio" name="tabs" checked="checked" id="tab1" />
+            <label for="tab1">COMMAND LINE</label>
+            <div id="tab-content1" class="content">
+                <h1>COMMAND LINE CHEAT SHEET</h1>
+                <hr />
+                <ul class="class">
+                    <table>
+                        <tr>
+                            <td>Make a Directory</td>
+                            <td>Change a Directory</td>
+                            <td>Copy a File to a Folder</td>
+                            <td>Open a File in Default Program</td>
+                            <td>Remove Directory</td>
+                            <td>Open a file</td>
+                            <td>Delete a file</td>
+                            <td>List Directory</td>
+                            <td>Create a File</td>
+                        </tr>
+                        <tr>
+                            <td>md foldername</td>
+                            <td>cd. to move back cd foldername to move into specific folder</td>
+                            <td>Copy filename foldername</td>
+                            <td>start filename</td>
+                            <td>rd foldername</td>
+                            <td>code filename</td>
+                            <td>del filename</td>
+                            <td>dir</td>
+                            <td>echo. > filename</td>
+                        </tr>
+                    </table>
+            </div>
+        </li>
+        <li class="tab">
+            <input type="radio" name="tabs" id="tab5" />
+            <label for="tab5">GO TAB</label>
+            <div id="tab-content5" class="content">
+                <h1>GO TAB CHEATSHEET</h1>
+                <hr />
+                <br />
+                <ul class="class">
+                    <table>
+                        <tr>
+                            <td>Assign Variables</td>
+                            <td>Short Assignment Characters</td>
+                            <td>Artithmatic Operators</td>
+                            <td>If Else Statement Example</td>
+                            <td>Adding Loop Example</td>
+                            <td>Functions</td>
+                            <td>Go Mod Init</td>
+                            <td>How to Run the Code</td>
+                        </tr>
+                        <tr>
+                            <td>There are 4 ways to Assign Varaibles in Go. var
+                                <h class="color"> colour</h> string :<h class="color"> colour </h> ="red".<br>
+                                <h class="color"> colour </h>
+                                string = "red"<br> var <h class="color"> colour </h> ="red"</h><br>
+                                <h class="color">colour</h> := "Red"
+                            </td>
+                            <td>== : Value is True
+                                != : Value is False
+                                += : Addition Assingment Operator
+                                -= : Subrtraction Assignment Operator
+                                *= : Multiplication Assignment Operator
+                                /= : Division Assignment Operator</td>
+                            <td>if err != nil {
+                                fmt.Println("whaay")
+                                } else {
+                                fmt.Println("try again")
+                                }<br>Here you can see an if else statement if the err variable does not = nil the code
+                                will print out the statement "whaay" else it will print out the statement "try again"
+                            </td>
+                            <td>func main() {
+                                sum := 0
+                                for i := 0 i 10; i++ {
+                                sum+=i }
+                                fmt.pritnln(sum) } <br>
+                                So in this function the code will print out the sum of all the numbers from 1-10 due to
+                                the Short Assignment Operator added together sequencely</td>
+                            <td>With Go Code the layout is simple you have variable then you have your function and then
+                                you have your parameter <br>
+                                Function: A Function is a blocke of code that the perfroms a task and if it is two words
+                                you should use camelCase <br>
+                                Parameters: A parameter normally comes at the end of the code and is situated inside
+                                brackets, and are used as information carriers for the function, for example
+                                firstName("Yousaf") <br>
+                                Returns: When writing a function some times you where require a value in return whether
+                                that be an int(interger) or string(words) for example <br> func addintionReturner(x int,
+                                y
+                                int) int {
+                                return x + y }
+                                func main() {
+                                fmt.Println(myFunction(1, 2))
+                                }</td>
+                        </tr>
+                    </table>
+                </ul>
 </body>
 
 </html>
